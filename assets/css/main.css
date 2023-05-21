@@ -5487,7 +5487,9 @@ input, select, textarea {
 }
 
 
-/* navbar styling */
+/* Navbar Styling */
+
+/* Common styles for both mobile and desktop */
 nav {
   position: fixed;
   width: 100%;
@@ -5496,10 +5498,7 @@ nav {
   transition: all 0.3s ease;
   background-color: #1e252d;
 }
-nav.sticky {
-  background: #4070f4;
-  padding: 13px 0;
-}
+
 nav .navbar {
   width: 90%;
   display: flex;
@@ -5507,22 +5506,23 @@ nav .navbar {
   align-items: center;
   margin: auto;
 }
+
 nav .navbar .logo a {
   font-weight: 500;
   font-size: 35px;
   color: #ffffff;
 }
-nav.sticky .navbar .logo a {
-  color: #ffffff;
-}
+
 nav .navbar .menu {
   display: flex;
   position: relative;
 }
+
 nav .navbar .menu li {
   list-style: none;
-  margin: 08px;
+  margin: 8px;
 }
+
 .navbar .menu a {
   font-size: 18px;
   font-weight: 500;
@@ -5530,22 +5530,15 @@ nav .navbar .menu li {
   padding: 6px 0;
   transition: all 0.4s ease;
 }
+
 .navbar .menu a:hover {
   color: #4070f4;
 }
-nav.sticky .menu a {
-  color: #fff;
-}
-nav.sticky .menu a:hover {
-  color: #4070f4;
-}
+
 .navbar .media-icons a {
   color: #ffffff;
   font-size: 18px;
   margin: 0 6px;
-}
-nav.sticky .media-icons a {
-  color: #fff;
 }
 
 /* Side Navigation Menu Button CSS */
@@ -5560,15 +5553,51 @@ nav .menu-btn,
   transition: all 0.3s ease;
   display: none;
 }
-nav .menu-btn {
-  color: #4070f4;
+
+/* Responsive styles for mobile */
+@media (max-width: 767px) {
+  nav .navbar {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  nav .navbar .menu {
+    display: none;
+  }
+
+  nav .navbar .logo a {
+    font-size: 28px;
+  }
+
+  nav .menu-btn {
+    display: block;
+  }
 }
+
+/* Responsive styles for desktop */
+@media (min-width: 768px) {
+  nav .menu-btn {
+    display: none;
+  }
+}
+
+/* Sticky navbar styles */
+nav.sticky {
+  background: #4070f4;
+  padding: 13px 0;
+}
+
+nav.sticky .navbar .logo a,
+nav.sticky .menu a,
+nav.sticky .media-icons a,
 nav.sticky .menu-btn {
   color: #fff;
 }
-.navbar .menu .menu-btn {
-  color: #fff;
+
+nav.sticky .menu a:hover {
+  color: #4070f4;
 }
+
 
 /* Custom Scroll Bar CSS */
 ::-webkit-scrollbar {
