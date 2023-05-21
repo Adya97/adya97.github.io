@@ -9,6 +9,46 @@
 	</head>
 	<body class="is-preload">
 
+	<!-- Move to up button -->
+	<div class="scroll-button">
+		<a href="#home"><i class="fas fa-arrow-up"></i></a>
+	</div>
+
+	<!-- navgaition menu -->
+	<nav>
+		<div class="navbar">
+			<div class="logo"><a href="#">Portfolio.</a></div>
+			<ul class="menu">
+				<li><a href="#intro">Home</a></li>
+				<li><a href="#intro">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#services">Projects</a></li>
+				<li><a href="#certifications">Certifications</a></li>
+				<li><a href="#test">Testimonials</a></li>
+				<div class="cancel-btn">
+					<i class="fas fa-times"></i>
+				</div>
+			</ul>
+			<div class="media-icons">
+				<a href="https://github.com/Adya97" target="_blank"
+				><i class="fab fa-github"></i
+				></a>
+				<a href="https://www.linkedin.com/in/aditya-nisal/"
+						target="_blank"
+				><i class="fab fa-linkedin"></i
+				></a>
+				<a href="mailto:avnisal@gmail.com" target="_blank"
+				><i class="far fa-envelope"></i
+				></a>
+				<a href="https://dev.to/adya97" target="_blank">
+				<i class="fas fa-blog"></i></a>
+			</div>
+		</div>
+		<div class="menu-btn">
+			<i class="fas fa-bars"></i>
+		</div>
+	</nav>
+
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
 
@@ -17,7 +57,7 @@
 						<h3>Hello,</h3>
 						<h1>I'm Aditya Nisal</h1>
 						<h2>Software Development Test Engineer</h2>
-						<p>Software Development Test Engineer with 2 years of experience with diverse experience in API and UI Automation Testing</p>
+						<p>Software Development Test Engineer with 2 years of diverse experience in API and UI Automation Testing</p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -32,10 +72,6 @@
 					<nav id="nav">
 						<ul class="links">
 							<li class="active"><a href="index.html">Get to know me</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/aditya-nisal/" target="_blank" class="icon brands fa-linkedin"><span class="label"></span></a></li>
-							<li><a href="https://github.com/Adya97" class="icon brands fa-github"><span class="label"></span></a></li>
 						</ul>
 					</nav>
 
@@ -134,11 +170,71 @@
 								<br>
 								</div>
 						</section>
-				<!-- Testimonial -->
+
+						<!-- My Project Start -->
+						<div class="heading">
+							<h2>My Projects</h2>
+						</div>
+						<section class="services" id="services">
+							<div class="content">
+								<div class="boxes">
+									<div class="box">
+										<div class="icon">
+											<i class="fab fa-java"></i>
+										</div>
+										<a href="https://github.com/Adya97/Web-Automation/tree/main" target="_blank">
+											<div class="topic">Web Automation Framework for Amazon.com (Selenium)
+											</div>
+											<p>The Web Automation Framework with Amazon.com is a versatile tool designed to automate various interactions with Amazon's website. The framework is written in JAVA language and includes capabilities such as searching, adding items to the cart, placing orders, and managing user accounts. It ensures stability through error handling and supports parallel execution. Overall, the framework is a reliable solution that enhances productivity and efficiency.
+											</p>
+											</a>
+									</div>
+									<div class="box">
+										<div class="icon">
+											<i class="fas fa-mobile-alt"></i>
+										</div>
+										<a href="" target="_blank">
+											<div class="topic">Mobile Automation Framework for Steve Madden (Appium)
+											</div>
+											<p>The Mobile Automation Framework with Steve Madden is a powerful tool built using Appium, designed to automate testing and interaction with the Steve Madden mobile application. The framework supports tasks such as navigating screens, product search, cart management, and user account management, while also providing data extraction capabilities. With robust error handling, parallel execution support, and compatibility with Appium, this framework is a reliable solution for automating Steve Madden mobile app testing.
+											</p></a>
+									</div>
+									<div class="box">
+										<div class="icon">
+											<i class="fas fa-server"></i>
+										</div><a href=""target="_blank">
+										<div class="topic">REST Assured API Automation Framework
+										</div>
+										<p>
+											The REST Assured API Automation Framework is a robust and user-friendly tool designed to automate API testing processes. With its intuitive scripting environment and extensive feature set, developers and testers can easily perform HTTP requests, handle responses, and validate API endpoints. The framework supports various authentication methods, offers error handling and reporting capabilities, and promotes reusability through data-driven testing and environment management. It integrates smoothly with popular CI tools, making it an ideal solution for efficient and reliable API automation.
+										</p></a>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- My Certifications -->
+						<div class="heading">
+							<h2>My Certifications</h2>
+						</div>
+						<section class="contact-new" id="certifications">
+							<div class="content">
+								<div class="text">
+									<div id="parent-element">
+										<ul id="parent-ele">
+											<a href="https://coursera.org/share/57905ce19219973784311ca6d4ea91a5" target="_blank">Data Analysis with R Programming</li></a>
+											<a href="https://coursera.org/share/b317c241dd43350bfbfae7dd1fd2ca43" target="_blank">The Structured Query Language (SQL)</li></a>
+											<a href="https://coursera.org/share/bbd72e76fa99de178082de91b69f8522" target="_blank">Object Oriented Programming in Java</li></a>
+											<a href="https://coursera.org/share/5284cd4a893b1051c1ed1b4dd92802bd" target="_blank">SQL for Data Science</li></a>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</section>
+							<!-- Testimonial -->
 						<div class="heading">
 							<h2>Testimonials</h2>
 						</div>
-				<section class="testimonials">
+				<section class="testimonials" id="test">
 					<div class="testimonial">
 						<img src="images/Mohanraj_Test.jpg" alt="Peer 1">
 						<p>Aditya, I just wanted to take a moment to tell you what a
@@ -169,6 +265,9 @@
 							next step of your career. Will miss you!!</p>
 						<h3>Deepika Shrivastava</h3>
 						<span>QAE-3, PlobalApps</span>
+						<ul class="actions special">
+							<li><a href="https://drive.google.com/file/d/1j6_ioKJK3Y7uXm3LSbgFZeOf9utXTGET/view?usp=sharing" target="_blank" class="button large">Show More</a></li>
+						</ul>
 					</div>
 				</section>
 						<!-- Contact ME -->
@@ -177,6 +276,7 @@
 								<li><a href="mailto:avnisal@gmail.com" target="_blank" class="button large">Mail me at</a></li>
 							</ul></div>
 					</div>
+
 				<!-- Footer -->
 					<footer id="footer">
 						<section class="split contact">
@@ -184,13 +284,6 @@
 								<h3>Address</h3>
 								<p>Shyam Residency<br />
 								Ravet Pune Maharashtra</p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/aditya-nisal/" target="_blank" class="icon brands fa-linkedin"><span class="label"></span></a></li>
-									<li><a href="https://github.com/Adya97" class="icon brands fa-github"><span class="label"></span></a></li>
-								</ul>
 							</section>
 						</section>
 					</footer>
